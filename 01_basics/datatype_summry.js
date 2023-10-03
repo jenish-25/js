@@ -16,7 +16,7 @@ const anotherId = Symbol('*')
 // console.log(id === anotherId);
 
 const bigNumber = 3456543576654356754n  //bigint
-console.log(typeof bigNumber);
+// console.log(typeof bigNumber);
 
 const heros = ["shaktiman", "naagraj", "doga"];   //array     //type>object
 let myObj = {                        //object               //type>object
@@ -28,6 +28,25 @@ const myFunction = function(){         //function stored in variable        //ty
     console.log("Hello world");
 }
 
-console.log(typeof myFunction);
-console.log(typeof heros);
-console.log(typeof myObj);
+// console.log(typeof myFunction);
+// console.log(typeof heros);
+// console.log(typeof myObj);
+
+//stack(primitive)    
+let myyt="jenishvavadiya"
+let another=myyt
+// console.log(another);
+// console.log(myyt);
+// myyt="hello"
+// console.log(myyt);
+
+
+//heap(non-primitive)
+
+let userOne={
+     email:"hello@google.somm",
+     upi:"hell@ypl"
+}
+let userTwo=userOne
+userTwo.email="jarvis@gmail.com"
+console.log(userTwo.email);
